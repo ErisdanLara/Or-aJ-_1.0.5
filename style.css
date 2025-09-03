@@ -1,0 +1,158 @@
+/* ///////////////////////////////////ESTILO DO SITE////////////////// */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif; 
+    background: #F4F6F8;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+/* //////////////////////////////FIN DO ESTILO DO SITE/////////////////// */
+/* /////////////////////////////ESTILO SECTIONS//////////////////////////// */
+.lovy {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.previw {
+    background-color: #e6ebf1;
+    margin: 20px;
+    box-shadow: 2px 2px 15px;
+    padding: 10px;
+    margin-left: 250px;
+    width: 50%;
+}
+
+.divisoria {
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    margin-top: 25px;
+}
+
+.ventana {
+    display: none; 
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    border-radius: 20px;
+}
+
+.botonventana {
+        background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+
+
+/* //////////////////////////////////////////FIN ESTILO SECTIONS///////////////// */
+/* //////////////////////////////////ESTILO DOS LABELS/////////////////////// */
+.nomepreviw {
+    background-color: #e6ebf1;
+}
+
+.labelitens {
+    display: block;
+    background-color: rgba(10, 61, 145, 0);
+    padding: 20px;
+    margin: 10px auto;
+}
+/* ///////////////////////////////FIN ESTILO DOS LABELS/////////////////////// */
+/* //////////////////////////////////ESTILO DOS INPUTS/////////////////////// */
+#nome, #tel, #Orcamento {
+    display: block;
+    width: 80%;
+    height: 30px;
+    outline: none;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+#item, #quantidade, #valor {
+    display: block;
+    width: 80%;
+    height: 50px;
+    outline: none;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#additen, #sair {
+    display: block;
+    margin: 50px auto;
+}
+
+/* /////////////////////////////FIN ESTILO DOS INPUTS/////////////////////// */
+.logo {
+    width: 700px;
+}
+/* /////////////////////////////////////ESTILOS BUTTON//////////////////// */
+#gerarpdf {
+    margin-top: 850px;
+    margin-left: 100px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+button {
+    border: none;
+    background-color: #FF6A00;
+    width: 140px;
+    height: 50px;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+button:hover {
+    background: #0A3D91;
+    box-shadow: 10px 10px  10px rgba(10, 61, 145, 0.5);
+}
+
+button:active {
+    opacity: .3;
+}
+/* ////////////////////////////////FIN ESTILO BUTTON//////////////////////////// */
+
+h2 {
+    margin-top: 20px;
+    background-color: #e6ebf1;
+}
+
+ul {
+    margin-top: 20px;
+    background-color: #e6ebf1;
+}
+
+h3, span {
+    margin-top: 100px;
+    background-color: #e6ebf1; 
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: end;
+    margin-right: 60px;
+}
