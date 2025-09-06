@@ -52,3 +52,28 @@ function adicionarItem() {
 function limparTudo() {
     window.location.reload()
 }
+
+const btngerarpdf = document.querySelector('#gerarpdf')
+
+btngerarpdf.addEventListener("click", () => {
+
+    
+    // const nomeClient = document.getElementById('#nome').value;
+    // const telefon = document.getElementById('#tel').value;
+
+    // document.getElementById("#nomeCliente").textContent = nomeClient;
+    // document.getElementById("#telefone").textContent = telefon;
+
+    const previw = document.querySelector('#previw');
+
+    const options = {
+        margin: [10, 10, 10, 10],
+        filename: `Cliente: ${(nome).value}.pdf`,
+        html2canvas: {scale: 2},
+        jspdf: {unit: "mn", format: "a4", orientation: "portrait"}
+    }
+
+    html2pdf().set(options).from(previw).save();
+
+    
+})

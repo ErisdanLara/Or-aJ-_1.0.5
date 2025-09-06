@@ -21,7 +21,7 @@ body {
     justify-content: center;
 }
 
-.previw {
+#previw {
     background-color: #e6ebf1;
     margin: 20px;
     box-shadow: 2px 2px 15px;
@@ -57,8 +57,9 @@ body {
 
 /* //////////////////////////////////////////FIN ESTILO SECTIONS///////////////// */
 /* //////////////////////////////////ESTILO DOS LABELS/////////////////////// */
-.nomepreviw {
+p {
     background-color: #e6ebf1;
+    margin-top: 20px;
 }
 
 .labelitens {
