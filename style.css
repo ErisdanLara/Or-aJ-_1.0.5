@@ -22,7 +22,7 @@ body {
 }
 
 #previw {
-    background-color: #e6ebf1;
+    background-color: #ffffff;
     margin: 20px;
     box-shadow: 2px 2px 15px;
     padding: 10px;
@@ -58,7 +58,7 @@ body {
 /* //////////////////////////////////////////FIN ESTILO SECTIONS///////////////// */
 /* //////////////////////////////////ESTILO DOS LABELS/////////////////////// */
 p {
-    background-color: #e6ebf1;
+    background-color: #ffffff;
     margin-top: 20px;
 }
 
@@ -136,17 +136,18 @@ button:active {
 
 h2 {
     margin-top: 20px;
-    background-color: #e6ebf1;
+    background-color: #ffffff;
 }
 
-ul {
+li, ul {
     margin-top: 20px;
-    background-color: #e6ebf1;
+    background-color: #ffffff;
+    list-style: none;
 }
 
 h3, span {
     margin-top: 100px;
-    background-color: #e6ebf1; 
+    background-color: #ffffff; 
 }
 
 h2 {

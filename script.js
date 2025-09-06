@@ -58,11 +58,18 @@ const btngerarpdf = document.querySelector('#gerarpdf')
 btngerarpdf.addEventListener("click", () => {
 
     
-    // const nomeClient = document.getElementById('#nome').value;
-    // const telefon = document.getElementById('#tel').value;
+    const nomeClient = document.getElementById('nome').value;
+    const telefon = document.getElementById('tel').value;
+    const observ = document.getElementById('Orcamento').value;
 
-    // document.getElementById("#nomeCliente").textContent = nomeClient;
-    // document.getElementById("#telefone").textContent = telefon;
+    document.getElementById("nomeCliente").textContent = nomeClient;
+    document.getElementById("telefone").textContent = telefon;
+    document.getElementById('observacion').textContent = observ;
+
+
+    document.querySelector('#nome').style.display = 'none'
+    document.querySelector('#tel').style.display = 'none'
+    document.querySelector('#Orcamento').style.display = 'none'
 
     const previw = document.querySelector('#previw');
 
@@ -70,7 +77,8 @@ btngerarpdf.addEventListener("click", () => {
         margin: [10, 10, 10, 10],
         filename: `Cliente: ${(nome).value}.pdf`,
         html2canvas: {scale: 2},
-        jspdf: {unit: "mn", format: "a4", orientation: "portrait"}
+        jspdf: {unit: "mm", format: "a4", orientation: "portrait"},
+        
     }
 
     html2pdf().set(options).from(previw).save();
