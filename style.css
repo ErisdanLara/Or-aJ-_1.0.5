@@ -9,25 +9,25 @@
 
 body {
     display: flex;
+    padding: 30px;
     width: 100vw;
     height: 100vh;
 }
 /* //////////////////////////////FIN DO ESTILO DO SITE/////////////////// */
 /* /////////////////////////////ESTILO SECTIONS//////////////////////////// */
 .lovy {
-    max-width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 45%;
 }
 
 #previw {
     background-color: #ffffff;
-    margin: 20px;
+    /* margin: 20px; */
     box-shadow: 2px 2px 15px;
     padding: 10px;
-    margin-left: 250px;
-    width: 50%;
+    /* margin-left: 50px; */
+    width: 45%;
+    display: block;
+    margin: 20px auto;
 }
 
 .divisoria {
@@ -157,4 +157,41 @@ h2 {
 h3 {
     text-align: end;
     margin-right: 60px;
+}
+
+/* /////////////////////RESPONSIVIDADE/////////////////////////// */
+
+@media screen and (max-width: 1560px) {
+    body {
+        display: block;
+    }
+
+    .logo {
+        width: 400px;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    #previw {
+        width: 90%;
+        display: block;
+        margin: 50px auto ;
+    }
+
+    .ventana {
+        display: none; 
+        z-index: 1;
+        width: 90%;
+        height: 70%;
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        position: sticky;
+        border-radius: 20px;
+        margin: 10px auto 10px;
+    }    
+
+    #gerarpdf {
+        display: block;
+        margin: 0 auto 20px;
+    }
 }

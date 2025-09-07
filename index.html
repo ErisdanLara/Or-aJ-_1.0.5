@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.12.0/html2pdf.bundle.min.js" 
-        integrity="sha512-D25Z8/1q2z65ZpJ3NzY6XiPZfwjhbv34OTQHDIZd+KPK+uWCovGt+fMkSzW8ArzCMFUgZt6Cdu7qoXNuy6a2GA==" 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.12.0/html2pdf.bundle.min.js"
+        integrity="sha512-D25Z8/1q2z65ZpJ3NzY6XiPZfwjhbv34OTQHDIZd+KPK+uWCovGt+fMkSzW8ArzCMFUgZt6Cdu7qoXNuy6a2GA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js" defer></script>
     <title>OrçaJá</title>
 </head>
+
 <body>
     <section class="loby">
-        <img  class="logo" src="assets/OrçaJá.png" alt="logo-do-site" />
+        <img class="logo" src="assets/OrçaJá.png" alt="logo-do-site" />
         <div class="buttons">
             <button class="novoorçamento" id="novo" onclick="limparTudo()">Novo Orçamento</button>
             <button class="novoiten" id="newiten" onclick="abrirVentana()">Novo Iten</button>
         </div>
     </section>
     <section id="previw">
-        <p> <span id="nomeCliente">Nome</span></p>
+        <p>Nome<br><span id="nomeCliente">:</span></p>
         <input type="text" id="nome" placeholder="Digite o nome" />
 
-        <p> <span id="telefone">Telefone</span></p>
+        <p>Telefone<br><span id="telefone">:</span></p>
         <input type="tel" id="tel" placeholder="Digite o telefone" />
 
-        <p> <span id="observacion">Observação</span></p>
-        <input type="text" id="Orcamento" placeholder="Observação" />
+
 
         <div class="divisoria"></div>
 
@@ -38,25 +40,31 @@
 
         <h3>Total: R$ <span id="total">0.00</span></h3>
 
+        <div class="divisoria"></div>
+
+        <p> Observação<br><span id="observacion"> :</span></p>
+        <input type="text" id="Orcamento" placeholder="Observação" />
+
     </section>
     <section class="ventana">
         <label class="labelitens" for="item">Item:</label>
         <input type="text" id="item" placeholder="Nome do item">
-        
+
         <label class="labelitens" for="quantidade">Quantidade:</label>
         <input type="number" id="quantidade" placeholder="Quantidade">
-        
+
         <label class="labelitens" for="valor">Valor:</label>
         <input type="number" id="valor" placeholder="Valor por item" step="0.01">
 
         <div class="botonventana">
             <button id="additen" onclick="adicionarItem()">Adicionar Iten</button>
             <button id="sair" onclick="fecharVentana()">Sair</button>
-        </div>  
+        </div>
 
     </section>
-    
+
     <button id="gerarpdf">Gerar PDF</button>
 
 </body>
+
 </html>
